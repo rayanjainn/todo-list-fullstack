@@ -1,0 +1,51 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(79, 56, 255, 0.365);
+  height: 100vh;
+}
+.login-card-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px 20px rgba(91, 37, 252, 0.61);
+}
+.login-heading {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: rgba(63, 19, 196, 0.793);
+  padding-bottom: 20px;
+}
+.login-input {
+  display: block;
+  padding: 15px;
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  outline-color: rgba(91, 37, 252, 0.35);
+}
+.login-button {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(91, 37, 252, 0.61);
+  border: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: rgba(91, 37, 252, 0.804);
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}

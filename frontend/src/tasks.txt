@@ -1,0 +1,6 @@
+logo text
+button to create new todos
+stats
+search bar
+category filter (all,completed,in progress, archived)
+todo cards with buttons(archive,edit,delete)

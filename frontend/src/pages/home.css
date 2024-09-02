@@ -1,0 +1,264 @@
+.home-container {
+  width: 90%;
+  margin: auto;
+}
+
+.home-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.new-task-btn {
+  padding: 5px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgba(91, 37, 252, 0.61);
+  border: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.new-task-btn:active {
+  transform: scale(0.95);
+}
+.header-logo-text {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: rgba(63, 19, 196, 0.793);
+}
+header {
+  padding: 10px 0;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+.search-container {
+  margin: 25px auto;
+  position: relative;
+}
+.search-bar {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  outline-color: rgba(91, 37, 252, 0.35);
+}
+.search-icon {
+  color: rgb(150, 150, 150);
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+.filter-container {
+  display: flex;
+  justify-content: start;
+  border-radius: 20px;
+  min-height: 75px;
+}
+.filter-btn-container {
+  flex: 1;
+}
+.filter-btn-container > button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.filter-btn-container > button:hover {
+  border: 1px solid rgba(153, 121, 248, 0.667);
+}
+
+.filter-btn-container > button > h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(63, 19, 196, 0.793);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.filter-btn-container > button > p {
+  aspect-ratio: 1;
+  background-color: rgb(155, 124, 197);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  min-width: 30px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-btn-container > .active-filter {
+  background-color: rgba(91, 37, 252, 0.61);
+}
+.filter-btn-container > .active-filter > p {
+  background-color: white;
+  color: rgba(63, 19, 196, 0.793);
+}
+.filter-btn-container > .active-filter > h4 {
+  color: white;
+}
+.todo-main-container {
+  margin-top: 30px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.todo-card {
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.checkbox {
+  border: 2px solid gainsboro;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkbox-active {
+  background-color: rgba(91, 37, 252, 0.61);
+  border: 1px solid rgba(91, 37, 252, 0.69);
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.todo-content-container {
+  width: 100%;
+}
+.todo-card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.todo-title {
+  color: rgb(63, 19, 196);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.completed-todo-title {
+  text-decoration: line-through;
+  text-decoration-color: rgb(38, 3, 144);
+  color: rgb(63, 19, 196);
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  color: rgb(63, 19, 196);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.archive:hover {
+  color: rgba(98, 68, 189, 0.822);
+  transform: scale(1.2);
+}
+.edit:hover {
+  color: rgba(98, 68, 189, 0.822);
+  transform: scale(1.2);
+}
+.delete:hover {
+  color: rgba(98, 68, 189, 0.822);
+  transform: scale(1.2);
+}
+.add-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.add-task-container {
+  position: fixed;
+  z-index: 150;
+  width: min-content;
+  height: min-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.add-task-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.add-task-form > input,
+.add-task-form > textarea,
+.add-task-form > button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  outline-color: rgba(91, 37, 252, 0.35);
+}
+.add-task-form > button {
+  outline: none;
+  background-color: rgba(91, 37, 252, 0.61);
+  border: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.add-task-form > button:active {
+  transform: scale(0.95);
+}
+.add-task-form > button:hover {
+  background-color: rgba(91, 37, 252, 0.804);
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    width: 80%;
+  }
+  .header-logo-text {
+    font-size: 50px;
+  }
+  .new-task-btn {
+    padding: 8px 10px;
+    font-size: 20px;
+    border-radius: 13px;
+  }
+}
